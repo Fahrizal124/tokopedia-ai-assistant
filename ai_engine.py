@@ -27,7 +27,7 @@ class DeepSeekAI:
         2. ...
         """
         response = self.client.chat.completions.create(
-            model="deepseek-ai/DeepSeek-V3",
+            model="meta-llama/Llama-4-Scout-17B-16E-Instruct",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=500,
             temperature=0.7,
@@ -47,7 +47,7 @@ class DeepSeekAI:
         Jawab max 3-4 kalimat, actionable, dan spesifik!
         """
         completion = self.client.chat.completions.create(
-            model="deepseek-ai/DeepSeek-V3",
+            model="meta-llama/Llama-4-Scout-17B-16E-Instruct",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=300,
             temperature=0.7,
